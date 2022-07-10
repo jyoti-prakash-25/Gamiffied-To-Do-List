@@ -14,6 +14,7 @@ body {
 
 body {
   display: flex;
+  position: relative;
 }
 
 .profile-section {
@@ -144,14 +145,14 @@ body {
   background-color: rgb(238, 138, 235);
   border-radius: 0.25em;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   font-style: italic;
   color: rgb(77, 0, 74);
 }
 .lists-section .tasks-list .to-do-list .new-task .plus-button {
-  width: 25%;
+  width: 50%;
   border: none;
   padding: 0.5em;
   border-radius: 0.25em;
@@ -240,4 +241,77 @@ body {
 }
 .lists-section .tasks-list .list-adder .add-list-button:active {
   background-color: rgb(119, 39, 116);
+}
+
+.dark-filter {
+  position: fixed;
+  width: 100%;
+  display: none;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.dark-filter .popup-section {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background-color: rgb(73, 0, 71);
+  border-radius: 1em;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+.dark-filter .popup-section h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(59, 0, 57);
+  padding: 0.5em 0.5em 0.5em 0em;
+  margin: 0.25em 0.25em 0em 0.25em;
+  background-color: rgb(255, 163, 252);
+  border-radius: 0.25em;
+}
+.dark-filter .popup-section .popup-task-bar {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 0em 1em;
+  align-items: center;
+}
+.dark-filter .popup-section .popup-task-bar .input-task {
+  height: 100%;
+  padding: 0.5em;
+}
+.dark-filter .popup-section .popup-task-bar .input-task input {
+  width: 100%;
+  padding: 0.75em;
+  background-color: rgb(228, 99, 223);
+  font-style: italic;
+  color: rgb(82, 6, 79);
+  border-radius: 0.25em;
+  border: none;
+  font-size: 1.5rem;
+}
+.dark-filter .popup-section .popup-task-bar .add-button-popup {
+  height: auto;
+  margin: 0 0.75em 0 0;
+  border: 0.1em rgb(175, 52, 171) solid;
+}
+.dark-filter .popup-section .popup-task-bar .add-button-popup button {
+  width: 100%;
+  height: 100%;
+  padding: 0.9em 0em;
+  border-radius: 0.25em;
+  background-color: rgb(255, 194, 253);
+  color: rgb(82, 6, 79);
+  border: none;
+  transition: 300ms;
+}
+.dark-filter .popup-section .popup-task-bar .add-button-popup button:hover {
+  background-color: rgb(214, 138, 212);
+}
+.dark-filter .popup-section .popup-task-bar .add-button-popup button:active {
+  background-color: rgb(177, 87, 174);
 }/*# sourceMappingURL=styles.css.map */
