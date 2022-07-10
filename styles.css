@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-size: 62.5%;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+.profile-section {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 40%;
+  border: 1px black solid;
+  border-right: 0.5em rgb(104, 0, 99) solid;
+  background-image: linear-gradient(to bottom left, rgb(17, 0, 16), rgb(37, 3, 35));
+  min-height: 100vh;
+  max-height: 100vh;
+}
+.profile-section .banner-image {
+  width: 100%;
+  height: 20%;
+  background: url(./images/1134131.png) no-repeat;
+  background-position: 0% 100%;
+  background-size: cover;
+  padding: 0;
+  border-bottom: 1.5em rgb(104, 0, 99) solid;
+}
+.profile-section .profile-image {
+  position: absolute;
+  border: 1em rgb(104, 0, 99) solid;
+  align-self: center;
+  height: 20%;
+  width: 25%;
+  left: 37.5%;
+  top: 10%;
+  background: url(./images/meet-tmkoc-champaklal-aka-amit-bhatt-real-wife_2_610a6640e7f4d.jpeg) no-repeat;
+  background-size: cover;
+  background-position: 0% 15%;
+  border-radius: 50%;
+}
+.profile-section .profile-name {
+  text-align: center;
+  padding-top: 4em;
+  font-size: 2.5rem;
+  color: rgb(255, 205, 253);
+}
+.profile-section .stats-subsection {
+  color: rgb(255, 202, 253);
+  padding: 10em 20%;
+  padding-bottom: 4em;
+  list-style-type: none;
+}
+.profile-section .stats-subsection li:nth-child(1),
+.profile-section .stats-subsection li:nth-child(3),
+.profile-section .stats-subsection li:nth-child(5),
+.profile-section .stats-subsection li:nth-child(7) {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.profile-section .stats-subsection li .stat-bars {
+  border: 0.375em black solid;
+  width: 100%;
+  height: 3em;
+  margin-bottom: 1em;
+}
+.profile-section .stats-subsection li:nth-child(2) {
+  background: url(./images/loading-red.png) no-repeat;
+  background-size: 100% 100%;
+}
+.profile-section .stats-subsection li:nth-child(4) {
+  background: url(./images/loading-orange.png) no-repeat;
+  background-size: 100% 100%;
+}
+.profile-section .stats-subsection li:nth-child(6) {
+  background: url(./images/loading-blue.png) no-repeat;
+  background-size: 100% 100%;
+}
+.profile-section .stats-subsection li:nth-child(8) {
+  background: url(./images/loading-green.png) no-repeat;
+  background-size: 100% 100%;
+}
+.profile-section footer {
+  width: 100%;
+  padding: 1.25em;
+  text-align: center;
+  color: rgb(236, 116, 232);
+}
+.profile-section footer h6 {
+  font-size: 1.5rem;
+  padding-bottom: 1em;
+}
+.profile-section footer .credits-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+.profile-section footer .credits-list li {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.lists-section {
+  width: 60%;
+  height: auto;
+  background-image: linear-gradient(to bottom, rgb(49, 0, 34), rgb(49, 0, 34));
+}
+.lists-section .tasks-list {
+  padding: 7em;
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 6em;
+}
+.lists-section .tasks-list .to-do-list {
+  padding: 1em;
+  background-image: linear-gradient(to bottom, rgb(49, 6, 46), rgb(49, 6, 46));
+  border-radius: 1em;
+  min-height: 50em;
+  max-height: 50em;
+  box-shadow: 0.05em 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+}
+.lists-section .tasks-list .to-do-list h4 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(255, 202, 253);
+  padding: 0.5em 0em;
+  background-color: rgb(27, 2, 26);
+  border-radius: 0.5em;
+}
+.lists-section .tasks-list .to-do-list .new-task {
+  margin: 0.5em 0em;
+  padding: 0.5em 0.5em 0.5em 1em;
+  width: 100%;
+  background-color: rgb(238, 138, 235);
+  border-radius: 0.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: rgb(77, 0, 74);
+}
+.lists-section .tasks-list .to-do-list .new-task .plus-button {
+  width: 25%;
+  border: none;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  text-align: center;
+  background-color: rgb(146, 44, 143);
+  color: rgb(255, 200, 253);
+  font-weight: 700;
+  transition: 300ms;
+}
+.lists-section .tasks-list .to-do-list .new-task .plus-button:hover {
+  background-color: rgb(105, 19, 102);
+}
+.lists-section .tasks-list .to-do-list .new-task .plus-button:active {
+  background-color: rgb(66, 8, 64);
+}
+.lists-section .tasks-list .to-do-list .main-task {
+  margin: 0.5em 0em;
+  padding: 0.5em 0.5em 0.5em 1em;
+  width: 100%;
+  background-color: rgb(201, 85, 197);
+  border-radius: 0.5em;
+}
+.lists-section .tasks-list .to-do-list .main-task .buttons-div {
+  display: grid;
+  padding: 0.5em;
+  grid-template-columns: 5fr 1fr 1fr;
+  grid-template-rows: 100%;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(77, 0, 74);
+  font-weight: 700;
+}
+.lists-section .tasks-list .to-do-list .main-task .buttons-div .yes-button,
+.lists-section .tasks-list .to-do-list .main-task .buttons-div .no-button {
+  height: 100%;
+  margin: 0em 0.125em;
+  border-radius: 0.375em;
+  transition: 300ms;
+  border: none;
+}
+.lists-section .tasks-list .to-do-list .main-task .buttons-div .yes-button {
+  background-color: rgb(145, 231, 133);
+  border: 0.15em rgb(96, 187, 84) solid;
+}
+.lists-section .tasks-list .to-do-list .main-task .buttons-div .yes-button:hover {
+  background-color: rgb(97, 194, 84);
+}
+.lists-section .tasks-list .to-do-list .main-task .buttons-div .yes-button:active {
+  background-color: rgb(52, 100, 46);
+}
+.lists-section .tasks-list .to-do-list .main-task .buttons-div .no-button {
+  background-color: rgb(241, 119, 119);
+  border: 0.15em rgb(211, 106, 106) solid;
+}
+.lists-section .tasks-list .to-do-list .main-task .buttons-div .no-button:hover {
+  background-color: rgb(207, 89, 89);
+}
+.lists-section .tasks-list .to-do-list .main-task .buttons-div .no-button:active {
+  background-color: rgb(110, 31, 31);
+}
+.lists-section .tasks-list .list-adder {
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(97, 14, 91, 0.25), rgba(145, 39, 138, 0.25));
+  border-radius: 1em;
+  box-shadow: 0.05em 0em 1em 0.25em rgba(0, 0, 0, 0.25);
+}
+.lists-section .tasks-list .list-adder .add-list-button {
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  top: 37.5%;
+  right: 37.5%;
+  position: absolute;
+  background-color: rgb(218, 109, 214);
+  color: rgb(250, 184, 248);
+  border: none;
+  transition: 300ms;
+}
+.lists-section .tasks-list .list-adder .add-list-button h3 {
+  font-size: 7rem;
+  font-weight: 200;
+}
+.lists-section .tasks-list .list-adder .add-list-button:hover {
+  background-color: rgb(165, 68, 162);
+}
+.lists-section .tasks-list .list-adder .add-list-button:active {
+  background-color: rgb(119, 39, 116);
+}/*# sourceMappingURL=styles.css.map */

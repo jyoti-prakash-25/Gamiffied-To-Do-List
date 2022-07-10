@@ -1,46 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Simple To do List</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'><link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/7ef3aa74d6.js" crossorigin="anonymous"></script>
+    <title>Document</title>
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="container">
-  
-<!--  HEADER  -->
-  <header class="text-center text-light my-4">
-    <h1 class="mb-4">Simple Todo List</h1>
-    <form class="search">
-      <input type="text" class="form-control m-auto" name="search" placeholder="search your tasks">
-    </form>
-  </header>
-  
-<!--  LIST  -->
-  <ul class="list-group todos mx-auto text-light">
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-      <span>eat pizza</span>
-      <i class="far fa-trash-alt delete"></i>
-    </li>
-    
-     <li class="list-group-item d-flex justify-content-between align-items-center">
-      <span>listen to music</span>
-      <i class="far fa-trash-alt delete"></i>
-    </li>
-  </ul>
-  
-<!--  FORM  -->
-  <form class="add text-center my-4">
-    <label for="add" class="add text-light">Add a new todo:</label>
-    <input type="text" class="form-control m-auto" name="add" id="add">
-  </form>
-  
-</div>
-<!-- partial -->
-  <script  src="./script.js"></script>
 
+<body>
+    <section class="profile-section">
+        <div class="banner-image"></div>
+        <div class="profile-image"></div>
+        <h2 class="profile-name">Champaklal_The_Champ</h2>
+        <ul class="stats-subsection">
+            <li>Health</li>
+            <li>
+                <div class="stat-bars"></div>
+            </li>
+            <li>Experience</li>
+            <li>
+                <div class="stat-bars"></div>
+            </li>
+            <li>Intelligence</li>
+            <li>
+                <div class="stat-bars"></div>
+            </li>
+            <li>Productivity</li>
+            <li>
+                <div class="stat-bars"></div>
+            </li>
+        </ul>
+        <footer>
+            <h6>By Team KJRA</h6>
+            <ul class="credits-list">
+                <li>Khair</li>
+                <li>Jyoti</li>
+                <li>Rohan</li>
+                <li>Adya</li>
+            </ul>
+        </footer>
+    </section>
+    <section class="lists-section">
+        <ul class="list-lists">
+            <li>
+                <ul class="tasks-list">
+                    <li class="to-do-list">
+                        <h4>My tasks</h4>
+                        <div class="new-task">Add new task<button class="plus-button">Add</button></div>
+                        <div class="main-task">
+                            <div class="buttons-div">
+                                Finish the Interpod Hackathon Project
+                                <button class="yes-button"></button>
+                                <button class="no-button"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-adder"><button class="add-list-button"><h3>+</h3></button></li>
+                </ul>
+            </li>
+        </ul>
+
+    </section>
+    <script src="index.js"></script>
 </body>
+
 </html>
